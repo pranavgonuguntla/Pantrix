@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pantrix – AI Recipe Generator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>🥦 Pantrix</h1>
+    <p>Smart recipes from real-time local grocery data</p>
+  </header>
+
+  <main>
+    <section class="input-section">
+      <h2>Select Your Store & Ingredients</h2>
+      <input type="text" placeholder="Enter store name (e.g., Trader Joe’s)" />
+      <textarea placeholder="List available ingredients (comma-separated)"></textarea>
+    </section>
+
+    <section class="prefs-section">
+      <h2>Preferences</h2>
+      <label>Dietary Preference:
+        <select>
+          <option>None</option>
+          <option>Vegetarian</option>
+          <option>Vegan</option>
+          <option>Gluten-Free</option>
+        </select>
+      </label>
+      <label>Max Cook Time:
+        <input type="number" placeholder="e.g. 30 (minutes)" />
+      </label>
+    </section>
+
+    <button id="generate-btn">Generate Recipe</button>
+
+    <section id="recipe-output">
+      <h2>Your AI-Generated Recipe:</h2>
+      <div id="recipe-content">[Recipe will appear here]</div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Pantrix – Powered by AI</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
